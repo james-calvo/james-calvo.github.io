@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvo Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1fba0cfa69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About & Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+           
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>James</span><br> from Philippines</h1>
+            </div>
+        </div>
+    </div>
+<!------------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am Jessie James Calvo, a 21-year-old student. Residing in New Corella, Davao del Norte. I'm a sophomore studying for BS in Computer Science at the University of Immaculate Conception. A self-taught student programmer capable of working with HTML, CSS, Javascript, and responsive web design to provide great customer service.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Build simple applications.</li>
+                            <li><span>HTML/CSS</span><br>Builds Websites</li>
+                            <li><span>PHOTOSHOP/PREMIERE PRO</span><br>Edit videos and images</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            <li><span>Web development</span><br>Build websites using HTML/CSS</li>
+                            <li><span>App Development</span><br>Build applications using Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SENIOR HIGH SCHOOL</span><br>New Corella National High School</li>
+                            <li><span>FIRST YEAR</span><br>Saint Mary's College of Tagum, Inc.</li>
+                            <li><span>SECOND YEAR</span><br>University of the Immaculate Conception</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------------------Services------------------------>  
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. </p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI UX designers create the user interface for an app, website, or other interactive media.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Application Design</h2>
+                    <p>Application design combines a user interface, commonly known as (UI), and user experience (UX).</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------Portfolio----------------------------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="images/work1.png">
+                        <div class="layer">
+                            <h3>Lettuce in the House</h3>
+                            <p>Taste the healthy and delicious Lettuce fresh from the farm.
+                            Click here to learn more.</p>
+                            <a href="Lettuce Website/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.png">
+                        <div class="layer">
+                            <h3>Calvo's Food Gallery</h3>
+                            <p>Crave of sweet and delicious desserts? Order now @Calvo's Food Store.
+                            Click here to learn more.</p>
+                            <a href="FlexBox/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work3.png">
+                        <div class="layer">
+                            <h3>Wildlife</h3>
+                            <p>We exist to help protect our environment and do numbers of ways.
+                            Click here to learn more.</p>
+                            <a href="Calvo_Midterm/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/james-calvo?tab=projects" target="_blank" class="btn">See More</a>
+
+            </div>
+        </div>
+
+<!--------------------------Contact---------------------------------------> 
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-regular fa-envelope"></i>jamescalvo142@gmail.com</p>
+                        <p> <i class="fa-solid fa-square-phone"></i></i>+639501660595</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/jessiejames.calvo/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/jessie_james08"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/jessiejamess/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jessie-james-calvo-694201251/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Made with <i class="fa-solid fa-heart"></i> by Jessie James Calvo</p>
+            </div>
+        </div>
+
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyv7RSkP0FtGS-Rq5_vVeD5lNBOsJfWgLnzNMZTmzoH_HNpm9C0n6p7QYJVAWJcj8o/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+    
+</body>
+</html>

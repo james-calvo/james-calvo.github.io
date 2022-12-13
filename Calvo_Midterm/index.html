@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="home" id="Home">
+        <nav id="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Blog">Blog</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <img src="images/logo wildlife.png">
+
+        <div class="first">
+            <h2>Survival</h2>
+        <p>What this means is that we exist to help protect our environment and do numbers of ways.</p>
+        <button>Learn More</button>
+        </div>
+             
+    </div>
+
+   
+
+        <div class="menu" id="Blog">
+            <h1 style="font-size: 50px;" >Latest Articles</h1>
+            <h3>"Breaking News from the Wild"</h3>
+            
+
+            <div class="content-menu">
+                
+                <center>
+                    
+                <table>
+                    <tr>
+                        <td><img src="images/bird.jpg" width="300" height="350"></td>
+                        <td><img src="images/deer.jpg" width="300" height="350"></td>
+                        <td><img src="images/squirrel.jpg" width="300" height="350"></td>
+                    </tr>
+                    <tr>
+                        <td>Bird</td>
+                        <td>Deer</td>
+                        <td>Squirrel</td>
+                    </tr>
+                </table>
+                
+            </center>
+            <div class="notif">
+            <h4>Get notified about new amazing articles</h4>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+                <input type="button" value="Send" onclick="msg()">
+            </div>
+                
+
+            </div>
+
+        </div>
+
+
+        <div class="contact" id="Contact">
+            
+            <div class="my-contact">
+                <h1>Contact</h1>
+                
+                <center>
+               
+                    <img src="images/logo wildlife.png">
+
+                <table>
+                    <tr>
+                        <td>Articles</td>
+                        <td>About Us</td>
+                        <td>Learn More</td>
+                        <td>Social Media</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://education.nationalgeographic.org/resource/wildlife-conservation">@nationalgeographic</a>
+                        </footer></td>
+                        <td>We care about wildlife</td>
+                        <td>Environment</td>
+                        <td><a href="https://www.facebook.com/365wildlife">Follow us on fb</a></td>
+                    </tr>
+                </table>
+            
+
+            </div>
+
+            </center>
+
+
+        </div>
+
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+
+</body>
+</html>
